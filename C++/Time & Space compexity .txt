@@ -1,0 +1,30 @@
+Time Complexity
+Time complexity measures the amount of time an algorithm takes to run as a 
+         function of the input size (n). It is usually expressed using Big O notation, such as:
+
+O(1): Constant time (e.g., accessing an array element)
+O(log n): Logarithmic time (e.g., binary search)
+O(n): Linear time (e.g., traversing a list)
+O(n log n): Linearithmic time (e.g., merge sort)
+O(n²): Quadratic time (e.g., bubble sort)
+Time complexity helps compare algorithms and choose the most efficient one for a given problem.
+
+Space Complexity
+Space complexity measures the amount of memory an algorithm uses as a function of the input size. It includes:
+
+Memory for input data
+Memory for auxiliary variables and data structures
+Common space complexities:
+
+O(1): Constant space (e.g., in-place algorithms)
+O(n): Linear space (e.g., storing a copy of the input)
+Importance in Data Structures
+Different data structures have different time and space complexities for operations like insertion, deletion, and search. For example:
+
+Data Structure	Access	Search	Insertion	Deletion
+Array	O(1)	O(n)	O(n)	O(n)
+Linked List	O(n)	O(n)	O(1)	O(1)
+Hash Table	-	O(1)	O(1)	O(1)
+Binary Search Tree	O(log n)	O(log n)	O(log n)	O(log n)
+Understanding time and space complexity helps in selecting the right data structure and algorithm for efficient problem-solving.
+
