@@ -1,0 +1,7 @@
+/* TWo Sum 
+
+Here we solve a problem where have a array and a target value
+we should be found the two index og the element
+example
+ 
+*/
