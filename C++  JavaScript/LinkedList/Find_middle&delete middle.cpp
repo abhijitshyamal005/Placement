@@ -8,4 +8,3 @@ output: 1 -> 2 -> 4 -> 5
 */
 // c++ code
 
-soluc
