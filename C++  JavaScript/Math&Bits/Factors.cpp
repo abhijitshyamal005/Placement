@@ -1,5 +1,3 @@
-#include <iostream>
-#include <vector>
 
 class Factors {
 public:
@@ -62,5 +60,40 @@ public:
             product *= prime;
         }
         return product;
+    }
+};
+
+// Find the common factors of two numbers
+class CommonFactors {
+public:
+    // Function to return the common factors of two numbers
+    static std::vector<int> getCommonFactors(int a, int b) {
+        std::vector<int> factorsA = Factors::getFactors(a);
+        std::vector<int> factorsB = Factors::getFactors(b);
+        std::set<int> commonFactorsSet;
+
+        for (int factor : factorsA) {
+            if (std::find(factorsB.begin(), factorsB.end(), factor) != factorsB.end()) {
+                commonFactorsSet.insert(factor);
+            }
+        }
+
+        return std::vector<int>(commonFactorsSet.begin(), commonFactorsSet.end());
+    }
+};
+
+
+// count the number of common factors of two numbers
+class Solution {
+public:
+    int commonFactors(int a, int b) {
+        int cnt = 0;
+       int temp = __gcd(a , b);
+       for(int i = 1;i<= temp;i++){
+        if(temp%i==0){
+            cnt++;
+        }
+       } 
+       return cnt;
     }
 };
